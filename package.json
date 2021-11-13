@@ -12,6 +12,7 @@
     "node-dev": "^7.1.0"
   },
   "scripts": {
-    "dev": "node-dev --clear src/server.js"
+    "dev": "node-dev --clear src/server.js",
+    "start": "node src/server.js"
   }
 }
