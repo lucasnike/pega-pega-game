@@ -1,0 +1,102 @@
+.caixa {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(29, 87, 17);
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#texto_caixa {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+}
+
+#pontuacao {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+p {
+  font-size: 12px;
+}
+
+#p1 {
+  left: 10px;
+  top: 10px;
+}
+
+#p2 {
+  left: 210px;
+  top: 10px;
+}
+
+.center {
+  margin: auto;
+  padding: 10px;
+  width: 50%;
+  height: 50%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+#controls-p1 {
+  display: inline-grid;
+  grid-column-gap: 0;
+  align-self: end;
+}
+
+#controls-p2 {
+  display: inline-grid;
+  grid-column-gap: 0;
+  align-self: end;
+  left: 10%;
+}
+
+.movements_control {
+  border: solid 1px black;
+  margin: 0;
+  padding: 0;
+}
+
+#keyboard_key_up {
+  grid-column-start: 2;
+}
+
+#keyboard_key_left {
+  grid-column-start: 1;
+}
+
+#keyboard_key_right {
+  grid-column-start: 3;
+}
+
+@media (min-width: 721px) {
+  .movements_control {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .movements_control {
+    width: 20px;
+    height: 20px;
+  }
+}
